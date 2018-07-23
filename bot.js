@@ -15,7 +15,7 @@ client.on('message', msg => {
     }
     else if (msg.content == 'plan') {
         if (order == true) {
-            msg.reply('Please look at http://goo.gl/forms/oM3Y62VPhZOwYLTq2.');
+            message.author.sendMessage("Please look at http://goo.gl/forms/oM3Y62VPhZOwYLTq2 to request a server plan.");
             order = false;
             return;
         }
@@ -26,7 +26,7 @@ client.on('message', msg => {
     }
     else if (msg.content == 'custom') {
         if (order == true) {
-            msg.reply('Please look at #request-a-custom-server.'); // Send in DMs
+            msg.reply('Please look at #request-a-custom-server.'); // This won't send in dms.
             order = false;
             return;
         }
@@ -37,11 +37,14 @@ client.on('message', msg => {
     }
     else if (msg.content == ';order custom') {
         msg.reply('Please look at #request-a-custom-server');
+        return;
     }
     else if (msg.content == ';order plan') {
-        msg.reply('Please look at http://goo.gl/forms/oM3Y62VPhZOwYLTq2.');
+        message.author.sendMessage("Please look at http://goo.gl/forms/oM3Y62VPhZOwYLTq2 to request a server plan.");
+        return;
     }
     else if (msg.content == ';help') {
         msg.reply('Here is a list of commands.\n**;help** - View commands\n**;order** - Order a server');
+        return;
     }
 });
