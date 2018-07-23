@@ -4,11 +4,17 @@ const client = new Discord.Client();
 client.login(process.env.BOT_TOKEN)
 
 client.on('ready', () => {
-    console.log("Bot started. Use $help for a list of commands.");
+    console.log("Bot started. Use !help for a list of commands.");
 });
 
 client.on('message', msg => {
-    if (msg.content == '$help') {
+    if (msg.content == '!order') {
+        msg.reply('What kind of order are you looking to make? Please choose from **plan** or **custom** order.')
+    }
+});
+
+client.on('message', msg => {
+    if (msg.content == '!help') {
         msg.reply('Here is a list of commands.\n')
     }
 });
