@@ -10,6 +10,17 @@ client.on('ready', () => {
 client.on('message', msg => {
     if (msg.content == '!order') {
         msg.reply('What kind of order are you looking to make? Please choose from **plan** or **custom** order.')
+        client.on('message', msg=> {
+            if (msg.content == 'plan') {
+                msg.reply('Please look at #request-a-server')
+            }
+            else if (msg.content == 'custom') {
+                msg.reply('Please look at https://goo.gl/forms/oM3Y62VPhZOwYLTq2.')
+            }
+            else {
+                
+            }
+        });
     }
 });
 
