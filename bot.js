@@ -25,7 +25,7 @@ client.on('message', msg => {
     if (msg.content == '!order plan') {
         msg.reply('Please look at http://goo.gl/forms/oM3Y62VPhZOwYLTq2.');
     }
-})
+});
 
 client.on('message', msg => {
     if (msg.content == '!help') {
