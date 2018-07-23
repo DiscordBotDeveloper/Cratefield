@@ -13,11 +13,9 @@ client.on('message', msg => {
         client.on('message', msg=> {
             if (msg.content == 'custom') {
                 msg.reply('Please look at #request-a-custom-server.') // Send in DMs
-                break;
             }
             else if (msg.content == 'plan') {
                 msg.reply('Please look at https://goo.gl/forms/oM3Y62VPhZOwYLTq2.')
-                break;
             }
             else {
                 break;
