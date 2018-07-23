@@ -26,7 +26,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
     if (msg.content == '!help') {
-        msg.reply('Here is a list of commands.\n')
+        msg.reply('Here is a list of commands.\n**!order** - Order a server')
     }
 });
 
