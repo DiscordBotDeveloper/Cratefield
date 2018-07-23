@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.login(process.env.BOT_TOKEN)
 
 client.on('ready', () => {
-    console.log("Bot started. Use !help for a list of commands.");
+    console.log("Bot started. Use !help for a list of commands."); // gonna keep this
 });
 
 client.on('message', msg => {
@@ -12,7 +12,7 @@ client.on('message', msg => {
         msg.reply('What kind of order are you looking to make? Please choose from **plan** or **custom** order.')
         client.on('message', msg=> {
             if (msg.content == 'custom') {
-                msg.reply('Please look at #request-a-custom-server')
+                msg.reply('Please look at #request-a-custom-server.')
             }
             else if (msg.content == 'plan') {
                 msg.reply('Please look at https://goo.gl/forms/oM3Y62VPhZOwYLTq2.')
@@ -37,6 +37,6 @@ client.on('message', msg => {
 // });
 
 // Admin thing
-client.on('typingStart', (channel, user) => {
-    console.log(`${user.username} is typing in ${channel.name}`);
-});
+// client.on('typingStart', (channel, user) => {
+//     console.log(`${user.username} is typing in ${channel.name}`);
+// });
