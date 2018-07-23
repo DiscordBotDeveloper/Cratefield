@@ -8,7 +8,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-    if (msg.content == ';order') {
+    if (msg.content == '!order') {
         msg.reply('What kind of order are you looking to make? Please choose from **plan** or **custom** order.')
         client.on('message', msg=> {
             if (msg.content == 'custom') {
@@ -17,15 +17,22 @@ client.on('message', msg => {
             else if (msg.content == 'plan') {
                 msg.reply('Please look at https://goo.gl/forms/oM3Y62VPhZOwYLTq2.')
             }
-            else {
-                break;
-            }
+            break;
         });
     }
 });
 
 client.on('message', msg => {
-    if (msg.content == ';help') {
+    if (msg.content == '!order custom') {
+        msg.reply('Please look at #request-a-custom-server.') // Again, send in DMs
+    }
+    else if (msg.content == '!order plan') {
+        msg.reply('Please look at https://goo.gl/forms/oM3Y62VPhZOwYLTq2.')
+    }
+})
+
+client.on('message', msg => {
+    if (msg.content == '!help') {
         msg.reply('Here is a list of commands.\n**!order** - Order a server')
     }
 });
