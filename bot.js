@@ -11,7 +11,6 @@ client.on('ready', () => {
 client.on('message', msg => {
     if (msg.content == '!order') {
         msg.reply('What kind of order are you looking to make? Please choose from **plan** or **custom** order.');
-        msg.reply('*!order plan* or *!order custom*');
     }
 });
 
@@ -32,14 +31,3 @@ client.on('message', msg => {
         msg.reply('Here is a list of commands.\n**!order** - Order a server');
     }
 });
-
-// client.on('guildMemberAdd', member => {
-//     const channel = member.guild.channels.find('name', 'welcome');
-//     if (!channel) return;
-//     channel.send(`Welcome to the server, ${member}`);
-// });
-
-// Admin thing
-// client.on('typingStart', (channel, user) => {
-//     console.log(`${user.username} is typing in ${channel.name}`);
-// });
