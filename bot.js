@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.login(process.env.BOT_TOKEN)
 
 client.on('ready', () => {
-    bot.user.setGame('Glitching...'); // This doesn't work
+    client.user.setGame('Glitching...'); // This doesn't work
 });
 
 client.on('message', msg => {
@@ -47,7 +47,7 @@ client.on('message', msg => {
         msg.reply('Here is a list of commands.\n**;help** - View commands\n**;order** - Order a server');
         return;
     }
-    else if (msg.content == ';dailymeme') {
+    else if (msg.content == ';dailymeme') { // not working?
         msg.reply('Daily Meme Time! https://cdn.discordapp.com/attachments/471018880525926410/471018938302595092/635a5ef2e71e45cbb536b0633baa2bb711147d089b651e4922eb89a79ae1eaf6_1.jpg')
         return;
     }
