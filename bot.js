@@ -20,7 +20,7 @@ client.on('message', msg => {
             return;
         }
         else {
-            order = false; // This happens if another person says something before you can write plan or custom so....... poop
+            order = false; // This happens if another person says something before you can write plan or custom so, i can keep it or remove it, but i will keep it because they can exit the ;order by saying something unrelated to an option
             return;
         }
     }
