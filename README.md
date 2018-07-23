@@ -4,4 +4,6 @@ Cratefield is a bot for the server [Cratefield Premade](https://discord.gg/NS25a
 
 Buy custom made discord servers today!
 
-# The bot is having some issues. I will try to get it back up asap
+### News:
+
+The bot will flicker offline and online when i'm updating it.
