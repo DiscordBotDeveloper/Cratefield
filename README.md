@@ -8,4 +8,4 @@ Buy custom made discord servers today!
 
 The bot will flicker offline and online when i'm updating it.
 
-The bot is currently down rn cause my github account is "FLAGGED" lol ok but why
+~The bot is currently down rn cause my~ github account is "FLAGGED" lol ok but why
