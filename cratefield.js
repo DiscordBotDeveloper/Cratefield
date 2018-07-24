@@ -67,5 +67,9 @@ client.on('message', msg => {
     //     msg.reply(`${user.user} is playing fortnite! Message them to play!`); // sends @Cratefield is playing fortnite, so i disabled it for now
     //     return;
     // }
+    else if (msg.content == ';version') {
+        msg.reply('I am currently in version 1.5.6');
+        return;
+    }
     return;
 });
