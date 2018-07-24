@@ -44,17 +44,17 @@ client.on('message', msg => {
         return;
     }
     else if (msg.content == ';help') {
-        msg.reply('Here is a list of commands.\n**;help** - View commands\n**;order** - Order a server\n**;readme** - View the readme\n**;dailymeme** - Updated every day with a new meme\n**;fortnite** - Add the argument version to find the current version, and add the argument advert *(Advert is currently dead cause of a bug)* to advertise your game.');
+        msg.reply('Here is a list of commands.\n**;help** - View commands\n**;order** - Order a server\n**;dailymeme** - Updated every day with a new meme\n**;fortnite** - Add the argument version to find the current version, and add the argument advert *(Advert is currently dead cause of a bug)* to advertise your game.');
         return;
     }
     else if (msg.content == ';dailymeme') {
-        msg.reply('Daily Meme Time! https://cdn.discordapp.com/attachments/471018880525926410/471018938302595092/635a5ef2e71e45cbb536b0633baa2bb711147d089b651e4922eb89a79ae1eaf6_1.jpg');
+        msg.reply('Daily Meme Time! https://cdn.discordapp.com/attachments/471127273152708610/471407801168560130/0597ed8465cd44db12f81d352561f78d7b788a98690932d128e1bae1d41b04e4_1.jpg');
         return;
     }
-    else if (msg.content == ';readme') {
-        msg.reply('README Contents:\n **Cratefield**\n-----------------------\nCratefield is a bot for the server Cratefield Premade\nBuy custom made discord servers today!\n**News:**\nThe bot will flicker offline and online when im updating it.\n~The bot is currently down rn cause~ my github account is "FLAGGED" lol ok but why *(Doesnt shut down the bot, but my discord is now private. $7 per month fee for free!)*');
-        return;
-    }
+    // else if (msg.content == ';readme') {
+    //     msg.reply('README Contents:\n **Cratefield**\n-----------------------\nCratefield is a bot for the server Cratefield Premade\nBuy custom made discord servers today!\n**News:**\nThe bot will flicker offline and online when im updating it.\n~The bot is currently down rn cause~ my github account is "FLAGGED" lol ok but why *(Doesnt shut down the bot, but my discord is now private. $7 per month fee for free!)*');
+    //     return;
+    // }
     else if (msg.content == ';fortnite') {
         msg.reply('Please look at ;help for possible arguments');
         return;
@@ -64,7 +64,7 @@ client.on('message', msg => {
         return;
     }
     // else if (msg.content == ';fortnite advert') {
-    //     msg.reply(`${client.user} is playing fortnite! Message them to play!`); // sends @Cratefield is playing fortnite, so i disabled it for now
+    //     msg.reply(`${user.user} is playing fortnite! Message them to play!`); // sends @Cratefield is playing fortnite, so i disabled it for now
     //     return;
     // }
     return;
