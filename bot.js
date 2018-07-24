@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.login(process.env.BOT_TOKEN)
 
 client.on('ready', () => {
-    client.user.setGame('DO NOT USE');
+    client.user.setGame('there is a secret command ;D');
 });
 
 client.on('message', msg => {
@@ -44,7 +44,7 @@ client.on('message', msg => {
         return;
     }
     else if (msg.content == ';help') {
-        msg.reply('Here is a list of commands.\n**;help** - View commands\n**;order** - Order a server');
+        msg.reply('Here is a list of commands.\n**;help** - View commands\n**;order** - Order a server\n**;readme** - View the readme\n**secret command** - shows u a meme good luck');
         return;
     }
     else if (msg.content == ';dailymeme') {
