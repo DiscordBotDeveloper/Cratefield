@@ -48,7 +48,11 @@ client.on('message', msg => {
         return;
     }
     else if (msg.content == ';dailymeme') { // not working?
-        msg.reply('Daily Meme Time! https://cdn.discordapp.com/attachments/471018880525926410/471018938302595092/635a5ef2e71e45cbb536b0633baa2bb711147d089b651e4922eb89a79ae1eaf6_1.jpg')
+        msg.reply('Daily Meme Time! https://cdn.discordapp.com/attachments/471018880525926410/471018938302595092/635a5ef2e71e45cbb536b0633baa2bb711147d089b651e4922eb89a79ae1eaf6_1.jpg');
+        return;
+    }
+    else if (msg.content == ';readme') {
+        msg.reply('README Contents:\n **Cratefield**\n-----------------------\nCratefield is a bot for the server Cratefield Premade\nBuy custom made discord servers today!\n**News:**\nThe bot will flicker offline and online when im updating it.\nThe bot is currently down rn cause my github account is "FLAGGED" lol ok but why');
         return;
     }
 });
