@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.login(process.env.BOT_TOKEN)
 
 client.on('ready', () => {
-    client.user.setGame('DO NOT USE'); // This doesn't work
+    client.user.setGame('DO NOT USE');
 });
 
 client.on('message', msg => {
@@ -26,7 +26,7 @@ client.on('message', msg => {
     }
     else if (msg.content == 'custom') {
         if (order == true) {
-            msg.reply('Please look at #request-a-custom-server.'); // This won't send in dms.
+            msg.reply('Please look at #request-a-custom-server.'); // I don't want this to send in DMs
             order = false;
             return;
         }
