@@ -44,7 +44,7 @@ client.on('message', msg => {
         return;
     }
     else if (msg.content == ';help') {
-        msg.reply('Here is a list of commands.\n**;help** - View commands\n**;order** - Order a server\n**;dailymeme** - Updated every day with a new meme\n**;fortnite** - Add the argument version to find the current version, and add the argument advert *(Advert is currently dead cause of a bug)* to advertise your game.');
+        msg.reply('Here is a list of commands.\n**;help** - View commands\n**;order** - Order a server\n**;dailymeme** - Updated every day with a new meme\n**;fortnite** - Add the argument version to find the current version, and add the argument advert *(Advert is currently dead cause of a bug)* to advertise your game.\n**;version** - View the bot version');
         return;
     }
     else if (msg.content == ';dailymeme') {
@@ -60,7 +60,7 @@ client.on('message', msg => {
         return;
     }
     else if (msg.content == ';fortnite version') {
-        msg.reply('Fortnite is current v5.0, and will be updated to v5.1 at 4:00 A.M. EST 7/23/18');
+        msg.reply('Fortnite is current v5.1');
         return;
     }
     // else if (msg.content == ';fortnite advert') {
