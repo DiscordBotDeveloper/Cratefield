@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.login(process.env.BOT_TOKEN)
 
 client.on('ready', () => {
-    client.user.setGame('there is a secret command ;D');
+    client.user.setGame('hey use ;dailymeme');
 });
 
 client.on('message', msg => {
