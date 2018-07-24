@@ -55,4 +55,5 @@ client.on('message', msg => {
         msg.reply('README Contents:\n **Cratefield**\n-----------------------\nCratefield is a bot for the server Cratefield Premade\nBuy custom made discord servers today!\n**News:**\nThe bot will flicker offline and online when im updating it.\nThe bot is currently down rn cause my github account is "FLAGGED" lol ok but why');
         return;
     }
+    return;
 });
