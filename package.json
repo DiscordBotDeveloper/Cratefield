@@ -6,11 +6,11 @@
 
   "version": "1.3.4",
 
-  "main": "bot.js",
+  "main": "cratefield.js",
 
   "scripts": {
 
-    "start": "node bot.js"
+    "start": "node cratefield.js"
 
   },
 
