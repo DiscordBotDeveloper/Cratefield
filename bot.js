@@ -52,7 +52,7 @@ client.on('message', msg => {
         return;
     }
     else if (msg.content == ';readme') {
-        msg.reply('README Contents:\n **Cratefield**\n-----------------------\nCratefield is a bot for the server Cratefield Premade\nBuy custom made discord servers today!\n**News:**\nThe bot will flicker offline and online when im updating it.\nThe bot is currently down rn cause my github account is "FLAGGED" lol ok but why');
+        msg.reply('README Contents:\n **Cratefield**\n-----------------------\nCratefield is a bot for the server Cratefield Premade\nBuy custom made discord servers today!\n**News:**\nThe bot will flicker offline and online when im updating it.\n~The bot is currently down rn cause~ my github account is "FLAGGED" lol ok but why *(Doesnt shut down the bot, but my discord is now private. $7 per month fee for free!)*');
         return;
     }
     return;
