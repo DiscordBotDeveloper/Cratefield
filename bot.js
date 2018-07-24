@@ -44,7 +44,7 @@ client.on('message', msg => {
         return;
     }
     else if (msg.content == ';help') {
-        msg.reply('Here is a list of commands.\n**;help** - View commands\n**;order** - Order a server\n**;readme** - View the readme\n**secret command** - shows u a meme good luck');
+        msg.reply('Here is a list of commands.\n**;help** - View commands\n**;order** - Order a server\n**;readme** - View the readme\n**;dailymeme** - Updated every day with a new meme');
         return;
     }
     else if (msg.content == ';dailymeme') {
