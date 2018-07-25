@@ -48,7 +48,7 @@ client.on('message', msg => {
         return;
     }
     else if (msg.content == ';dailymeme') {
-        msg.reply('Daily Meme Time! https://cdn.discordapp.com/attachments/471127273152708610/471407801168560130/0597ed8465cd44db12f81d352561f78d7b788a98690932d128e1bae1d41b04e4_1.jpg');
+        msg.reply('Daily Meme Time! https://cdn.discordapp.com/attachments/471127273152708610/471643657779281930/1d22bf1b6ba5f88115b9b3fb4137109affc6804782db5431df3ac3acfeda4cb7_1.jpg');
         return;
     }
     // else if (msg.content == ';readme') {
